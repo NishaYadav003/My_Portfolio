@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" id="home-link">Home</a></li>
+                <li><a href="#about" class="nav-link" id="about-link">About Me</a></li>
+                <li><a href="#skills" class="nav-link" id="skills-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link" id="projects-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sections-container">
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="hero">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Automation Tester | Skilled in Selenium with Java  | Problem Solver</p>
+                <button class="cta">Explore My Work</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="about-content">
+                <img src="images/profile-pic.png" alt="About Me Image" class="about-img">
+                <p>
+                    I am a recent B.Sc. Computer Science graduate with hands-on experience in automation testing using Selenium with Java. 
+                    I have a strong foundation in key tools such as TestNG, Maven, Jenkins, and GitHub, along with basic knowledge of 
+                    API Testing and Postman, with some understanding of REST Assured APIs. 
+                    Passionate about enhancing software quality, I am eager to contribute to developing efficient, high-impact test 
+                    automation solutions. 
+                    I am actively seeking opportunities to apply and expand my skills in automation testing.
+                </p>
+                <p>
+                    Download my <a href="your-resume-link.pdf" download class="resume-link">resume</a>.
+                </p>
+                <p>
+                    Check out my <a href="https://www.udemy.com/certificate/UC-651b57fd-81c0-4477-809d-98b3abb29d2f/" target="_blank">certifications here</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency</th>
+                        <th>Icon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="window.open('https://en.wikipedia.org/wiki/Automation_testing', '_blank')">
+                        <td>Selenium WebDriver</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/icon.png" alt="Selenium WebDriver" class="skill-icon"></td>
+                    </tr>
+                    <tr onclick="window.open('https://en.wikipedia.org/wiki/TestNG', '_blank')">
+                        <td>TestNG</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 78%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/testng.png" alt="TestNG" class="skill-icon"></td>
+                    </tr>
+                    <tr onclick="window.open('https://maven.apache.org/', '_blank')">
+                        <td>Maven</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 78%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/image_processing20210621-7711-xko4ea.png" alt="Maven" class="skill-icon"></td>
+                    </tr>
+                    <tr onclick="window.open('https://en.wikipedia.org/wiki/Java_(programming_language)', '_blank')">
+                        <td>Java</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 76%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/java-logo.png" alt="Java" class="skill-icon"></td>
+                    </tr>
+                    <tr onclick="window.open('https://en.wikipedia.org/wiki/Eclipse_(IDE)', '_blank')">
+                        <td>Eclipse</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/logo-eclipse.png" alt="Eclipse" class="skill-icon"></td>
+                    </tr>
+                    <tr onclick="window.open('https://git-scm.com/', '_blank')">
+                        <td>Version Control</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/git.png" alt="Version Control" class="skill-icon"></td>
+                    </tr>
+                    <tr onclick="window.open('https://www.jenkins.io/', '_blank')">
+                        <td>Jenkins</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/OIP.jpg" alt="Jenkins" class="skill-icon"></td>
+                    </tr>
+                    <tr onclick="window.open('https://www.postman.com/', '_blank')">
+                        <td>Postman</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 76%;"></div>
+                            </div>
+                        </td>
+                        <td><img src="images/postman-icon-1990x2048-vq52fl5n.png" alt="Postman" class="skill-icon"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+      <!-- Projects Section -->
+<section id="projects" class="section projects-section">
+    <h2>My Projects</h2>
+    <div class="table-container">
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Project Title</th>
+                    <th>Description</th>
+                    <th>Demo</th>
+                    <th>GitHub Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>E-Commerce Website Testing </td>
+                    <td>•	Designed and executed automation test cases for the e-commerce platform to verify key functionalities 
+                            such as product search, cart management, and the checkout process, 
+                            ensuring a smooth user experience.</td>
+                    <td>
+                        <video class="project-video" style="width: 100px;">
+                            <source src="images/Ecommerce.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                    <td><a href="https://github.com/NishaYadav003/E-commerce-Website-Testing" target="_blank">View on GitHub</a></td>
+                </tr>
+                <tr>
+                    <td>Selenium Testing</td>
+                    <td>•	Independently developed and executed automated test scripts using Selenium WebDriver with Java, 
+                            focusing on the entire flight booking process, including flight search, seat selection, 
+                            and booking completion</td>
+                    <td>
+                        <video class="project-video" style="width: 100px;">
+                            <source src="images/Flight Ticket.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                    <td><a href="https://github.com/NishaYadav003/Flight-Booking-Website-Testing" target="_blank">View on GitHub</a></td>
+                </tr>
+                <!-- Add more projects as needed -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Modal Popup for Video -->
+<div id="video-modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <video controls id="modal-video" class="modal-video">
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            
+            <h2>Contact Me</h2>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/nisha-y-aa58b120a/" target="_blank">My LinkedIn</a></p>
+            <p>Email: <a href="mailto:nisha202yadav@gmail.com">nisha202yadav@gmail.com</a></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
