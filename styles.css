@@ -19,8 +19,8 @@ body {
 .nav-links {
     display: flex;
     justify-content: center;
+    margin: auto;
     align-items: center;
-    
     gap: 2rem;
 }
 
@@ -28,6 +28,7 @@ body {
     color: #fff;
     text-decoration: none;
     align-items: center;
+    margin: auto;
     position: relative;
     transition: color 0.3s ease; /* Smooth color transition */
 }
@@ -53,6 +54,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin: auto;
+    align-items: center;
     transition: transform 1s ease;
 }
 
@@ -66,7 +68,7 @@ body {
     justify-content: center;
     align-items: center; /* Center horizontally */
     background-color: #151515;
-    padding: 30px;
+    padding: 50px;
 }
 
 .home-section {
