@@ -256,6 +256,7 @@ body {
     width: 40px; /* Adjust size of the icons */
     height: 40px; /* Adjust size of the icons */
 }
+
 /* Style the modal (popup video) */
 .modal {
     display: none; /* Hidden by default */
@@ -292,7 +293,51 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .sections-container {
+        flex-direction: column;
+        min-width: 100%; /* Responsive */
+        padding: 30px; /* Reduced padding */
+    }
+    .projects-table {
+        display: block; /* Makes the table scrollable */
+        overflow-x: auto; /* Horizontal scroll for small screens */
+    }
+    .skills-container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        padding-top: 20px;
+        overflow-x: scroll; /* Horizontal scroll */
+    }
+    .projects-table,
+    .skills-table {
+        margin: 0 0; /* No extra spacing */
+        display: table-caption;
+        overflow-x: auto;
+    }
+    .skills-table,
+    .projects-table {
+        display: table-caption;
+    }
+    .project-video {
+        max-height: 300px; /* Limit video height */
+    }
+}
 
+.progress {
+    width: 50%; /* Width of the progress bar */
+    height: 20px; /* Height of the progress bar */
+    background-color: #E5E5E5; /* Grey color for the progress bar */
+    border-radius: 10px; /* Rounded corners for the progress bar */
+    margin-bottom: 20px; /* Margin at the bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    overflow: hidden;
+}
 
-
-
+.progress-bar {
+    height: 100%; /* Full height */
+    border-radius: 10px; /* Rounded corners */
+    transition: width 0.3s ease; /* Smooth width transition */
+    background: linear-gradient(90deg, #0074d9 0%, #00ffcc 100%); /* Color gradient */
+}
